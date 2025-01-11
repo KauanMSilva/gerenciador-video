@@ -1,0 +1,30 @@
+POST http://localhost:3333/videos
+Content-type: application/json
+
+{
+    "title": "(Armadilha do Diabo)",
+    "description": "Supernatural - S01E22",
+    "duration": 189
+}
+
+
+###
+// se colocar um nome especifico depois do search= aparecera só o que foi pesquisado, se eu dar um send request sem nada e trocar o primeiro post vai adicionando mais dados para nosso BD
+
+GET  http://localhost:3333/videos?search=
+
+
+###
+
+PUT  http://localhost:3333/videos/16f2703b-47a9-45bb-9ec8-1b26120c9e89
+Content-type: application/json
+
+{
+    "title": "Todo dia é terça-feira",
+    "description": "Esse é o segundo vídeo",
+    "duration": 230
+}
+
+###
+
+DELETE http://localhost:3333/videos/cf1ac16d-bf5d-4ab4-b1f6-9f3afd5573bf

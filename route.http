@@ -1,4 +1,4 @@
-POST http://localhost:3333/videos
+POST https://gerenciador-video.onrender.com/videos
 Content-type: application/json
 
 {
@@ -11,20 +11,20 @@ Content-type: application/json
 ###
 // se colocar um nome especifico depois do search= aparecera só o que foi pesquisado, se eu dar um send request sem nada e trocar o primeiro post vai adicionando mais dados para nosso BD
 
-GET  http://localhost:3333/videos?search=
+GET  https://gerenciador-video.onrender.com/videos
 
 
 ###
 
-PUT  http://localhost:3333/videos/16f2703b-47a9-45bb-9ec8-1b26120c9e89
+PUT  https://gerenciador-video.onrender.com/videos/bf43e5cb-85e7-4598-beee-4d369338760f
 Content-type: application/json
 
 {
-    "title": "Todo dia é terça-feira",
-    "description": "Esse é o segundo vídeo",
-    "duration": 230
+    "title": "Armadilha do Diabo",
+    "description": "Supernatural - S01E22",
+    "duration": 43
 }
 
 ###
 
-DELETE http://localhost:3333/videos/cf1ac16d-bf5d-4ab4-b1f6-9f3afd5573bf
+DELETE https://gerenciador-video.onrender.com/videos/fd0fd9d1-54f5-4a4e-8c2c-2ab20858566c
